@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Poppins,sans-serif,bugaki;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(26, 57, 39)
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f89c3e;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+button{
+    text-align: center;
+    width: 200px;
+    margin: 20px 10px;
+    padding: 1.3em 3em;
+    font-size: 12;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color:#f89c3e;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px
+    15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}            
+
+button:hover{
+    background-color: #f89c3e;
+    box-shadow: 0px 15px 20px rgba(46,229,157,0.4);
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+button:active{
+    transform: translateY(-1px);
+}
+
+.buttoncenter{
+    text-align: center;
+}
+
+
+.about{
+    background-color:rgb(26, 57, 39)
+}
+.row{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about1{
+    flex-basis: 37%;
+}
+
+.about1 img{
+    border-radius: 15px;
+    width: 63%;
+    margin-left: 450px;
+}
+
+.about2{
+    flex-basis: 50%;
+}
+
+.sub{
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: bugaki;
+    color: #f89c3e;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0px 40px;
+    color: whitesmoke; 
+    font-family:Poppins;
+}
+.tab-links{
+    margin-right: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-family: Poppins;
+    color: #f89c3e;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f89c3e;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+.tab-contents ul li span{
+    color:#f89c3e;
+    margin: 10px 0;
+}
+
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+html, body {
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-container {
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+  }
+  
+  :root {
+    --color-bg1: rgb(108, 0, 162);
+    --color-bg2: rgb(0, 17, 82);
+    --color1: 18, 113, 255;
+    --color2: 221, 74, 255;
+    --color3: 100, 220, 255;
+    --color4: 200, 50, 50;
+    --color5: 180, 180, 50;
+    --color-interactive: 140, 100, 255;
+    --circle-size: 80%;
+    --blending: hard-light;
+  }
+  
+  @keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+    50% {
+      transform: translateX(50%) translateY(10%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+  }
+  
+  
